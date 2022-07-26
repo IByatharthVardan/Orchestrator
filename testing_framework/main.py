@@ -7,9 +7,10 @@ import os
 
 def main():
     
-    files = os.listdir('config')
+    files = os.listdir('./config')
+    print(files)
     config = load_config(f'config/{files[0]}')
-    
+
     githubToIb = GithubToIB(config=config)
 
     if not githubToIb.OK:
