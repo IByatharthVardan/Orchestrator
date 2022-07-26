@@ -7,9 +7,9 @@ import os
 
 def main():
     
-    
+    github_token = sys.argv[1]
     config = load_config(f'app_config.yaml')
-
+    config['git_token'] = github_token
     githubToIb = GithubToIB(config=config)
 
     if not githubToIb.OK:
