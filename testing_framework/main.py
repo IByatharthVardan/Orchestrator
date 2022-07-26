@@ -2,13 +2,14 @@ from constants import *
 from utils import *
 import sys
 import json
+import os 
 
 
 def main():
-    config_file_loc = sys.argv[1]
-
-    config = load_config(config_file_loc)
-
+    
+    files = os.listdir('config')
+    config = load_config(f'config/{files[0]}')
+    
     githubToIb = GithubToIB(config=config)
 
     if not githubToIb.OK:
