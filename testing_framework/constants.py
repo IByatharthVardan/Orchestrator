@@ -26,6 +26,8 @@ def gitApiArgs(git_token) -> Dict[Text,Text]:
 
 def runRequest(GET,headers, url,data = ''):
 
+    print(f'url : {url}')
+    print(f'headers : {headers}')
     if GET:
         if data != '':
             response = requests.get(url, headers=headers,data = data)

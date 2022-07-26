@@ -5,7 +5,7 @@ flow_path: ib_solutions/solutions/fs/Instabase Drive/Marketplace apps/10k 10q/fl
 git_repo: bookish-umbrella
 git_owner: IByatharthVardan
 branch: main
-git_token: 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
+git_token: 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
 ib_token: SCjErWKhSf2Y1FJwF6BshmnqGHhV0W
 ib_base_api: https://instabase.com/api/v1/drives/
 ib_base: https://instabase.com/api/v1/

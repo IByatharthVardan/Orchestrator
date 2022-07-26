@@ -40,8 +40,6 @@ class GithubToIB:
             self.OK = True
         else:
             self.OK = False
-
-        print(self.config)
         self.EXT = 'zip'
         self.__file_content = ''
     
