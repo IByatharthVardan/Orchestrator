@@ -7,9 +7,8 @@ import os
 
 def main():
     
-    files = os.listdir('config/')
-    print(files)
-    config = load_config(f'config/{files[0]}')
+    
+    config = load_config(f'app_config.yaml')
 
     githubToIb = GithubToIB(config=config)
 
